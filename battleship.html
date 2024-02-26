@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Battleship Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="messageDisplay">
+            <h1 id="messageHeader">Battleship!</h1>
+        </div>
+        <div id="gameBoards">
+            <div id="userBoard">
+                <canvas id="userBattleshipCanvas" width="400" height="400"></canvas>
+            </div>
+            <div id="buttons">
+                <button id="rotateButton">Rotate</button>
+                <button id="startButton">Start Game</button>
+                <button id="restartButton">Restart</button>
+            </div>
+            <div id="opponentBoard">
+                <canvas id="opponentBattleshipCanvas" width="400" height="400"></canvas>
+            </div>
+        </div>
+        <div id="containers">
+            <div id="shipContainer">
+                <h2>Ships</h2>
+                <div id="shipList">
+                    <div id="destroyerIcon" class="ship" draggable="true" data-ship-type="destroyer"></div>
+                    <div id="submarineIcon" class="ship" draggable="true" data-ship-type="submarine"></div>
+                    <div id="cruiserIcon" class="ship" draggable="true" data-ship-type="cruiser"></div>
+                    <div id="battleshipIcon" class="ship" draggable="true" data-ship-type="battleship"></div>
+                    <div id="carrierIcon" class="ship" draggable="true" data-ship-type="carrier"></div>
+                </div>
+            </div>
+            <div id="gameInfo">
+                <h2>Turn: <span id="whosTurn"></span></h2>
+                <div id="userStats">
+                    <h3>Your Board</h3>
+                    <h4>Hits: <span id="hitCounter">0</span></h2>
+                    <h4>Misses: <span id="missCounter">0</span></h2>
+                </div>
+                <div id="opponentStats">
+                    <h3>Opponent's Board</h3>
+                    <h4>Hits: <span id="opponentHitCounter">0</span></h2>
+                    <h4>Misses: <span id="opponentMissCounter">0</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

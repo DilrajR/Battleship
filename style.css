@@ -1,0 +1,244 @@
+.flash-red {
+    background-color: red !important; 
+}
+
+body{
+    background-color: darkgray;
+}
+
+#messageDisplay{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(216, 213, 213);
+    border-radius: 10px;
+    border: 2px solid #4a4a4a;
+    box-shadow: inset 0 0 10px rgb(255, 255, 255);
+    height: 61px;
+}
+
+#messageHeader{
+    margin: 10px;
+}
+
+
+#gameInfo {
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 300px;
+    background-color: rgb(216, 213, 213);
+    box-shadow: inset 0 0 10px rgb(255, 255, 255);
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+
+#userStats {
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#opponentStats {
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#containers{
+    display: flex;
+    justify-content: center;
+}
+
+#gameBoards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #4a4a4a;
+    box-shadow: inset 0 0 10px rgb(255, 255, 255);
+}
+
+
+#userBoard{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(175, 175, 252);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#opponentBoard{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(175, 175, 252);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#shipList {
+    position: relative;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ship {
+    position: absolute;
+    border: 2px solid black;
+}
+
+#shipContainer > h2 {
+    position: absolute;
+    top: 0px;
+}
+
+#shipContainer{
+    position: relative;
+    width: 750px;
+    height: 300px;
+    background-color: rgb(216, 213, 213);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: inset 0 0 10px rgb(255, 255, 255);
+}
+
+#destroyerIcon{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(141, 141, 141);
+    top: 0px;
+    left: 5px;
+}
+
+#submarineIcon{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(141, 141, 141);
+    left: 90px;
+    top: 0;
+} 
+
+#cruiserIcon{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(141, 141, 141);
+    left: 220px;
+    top: 0;
+}
+
+#battleshipIcon{
+    width: 160px;
+    height: 40px;
+    background-color: rgb(141, 141, 141);
+    left: 350px;
+    top: 0;
+}
+
+#carrierIcon{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(141, 141, 141);
+    left: 525px;
+    top: 0;
+}
+
+#buttons{
+    margin: 10px;
+}
+
+#rotateButton {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    background-color: rgb(248, 171, 243);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#rotateButton:hover {
+    background-color: rgb(169, 124, 223);
+}
+
+#rotateButton:active {
+    transform: scale(0.95);
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+
+#startButton {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    background-color: rgb(104, 251, 71);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#startButton:hover {
+    background-color: rgb(184, 53, 53);
+}
+
+#startButton:active {
+    transform: scale(0.95);
+}
+
+#restartButton{
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    background-color: rgb(255, 14, 14);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    display: none;
+}
+
+#restartButton:hover {
+    background-color: rgb(190, 26, 26);
+}
